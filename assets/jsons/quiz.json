@@ -1,0 +1,111 @@
+{
+  "questions": [
+    {
+      "question": "What is 48,879 in hexadecimal?",
+      "subject": "mathematics",
+      "imageUrl": "",
+      "answer": 1,
+      "options": [
+        "0x18C1", "0xBEEF", "0xDEAD", "0x12D591"
+      ]
+    },
+    {
+      "question": "What is 65 times 52?",
+      "subject": "mathematics",
+      "imageUrl": "",
+      "answer": 3,
+      "options": [
+        "117", "3120", "3380", "3520"
+      ]
+    },
+    {
+      "question": "How hot is the surface of the sun?",
+      "subject": "general",
+      "imageUrl": "",
+      "answer": 1,
+      "options": [
+        "1,233 K", "5,778 K", "12,130 K", "101,300 K"
+      ]
+    },
+    {
+      "question": "What is the scientific name 0f a butterfly?",
+      "subject": "science",
+      "imageUrl": "images/butterfly.jpg",
+      "answer": 3,
+      "options": [
+        "Apis", "Coleoptera", "Formicidae", "Rhopalocera"
+      ]
+    },
+    {
+      "question": "What is the capital of Spain?",
+      "subject": "general",
+      "imageUrl": "images/spain.jpeg",
+      "answer": 2,
+      "options": [
+        "Berlin", "Madrid", "Barcelona", "San Juan"
+      ]
+    },
+    {
+      "question": "What is 70 degrees Fahrenheit in Celsius?",
+      "subject": "science",
+      "imageUrl": "images/thermometer.jpeg",
+      "answer": 4,
+      "options": [
+        "18.8889", "158", "21.1111", "20"
+      ]
+    },
+    {
+      "question": "How tall is Mount Everest?",
+      "subject": "general",
+      "imageUrl": "images/everest.jpeg",
+      "answer": 3,
+      "options": [
+        "6,683 ft (2,037 m)", "7,918 ft (2,413 m)", "19,341 ft (5,895 m)", "29,029 ft (8,847 m)"
+      ]
+    },
+    {
+      "question": "How far is the moon from Earth?",
+      "subject": "general",
+      "imageUrl": "images/moon_earth.jpeg",
+      "answer": 2,
+      "options": [
+        "7,918 miles (12,742 km)", "86,681 miles (139,822 km)", "238,400 miles (384,400 km)", "35,980,000 miles (57,910,00 km)"
+      ]
+    },{
+      "question": "",
+      "subject": "mathematics",
+      "imageUrl": "",
+      "answer": "",
+      "options": [
+        "", "", "", ""
+      ]
+    },
+    {
+      "question": "",
+      "subject": "science",
+      "imageUrl": "",
+      "answer": "",
+      "options": [
+        "", "", "", ""
+      ]
+    },
+    {
+      "question": "",
+      "subject": "programming",
+      "imageUrl": "",
+      "answer": "",
+      "options": [
+        "", "", "", ""
+      ]
+    },
+    {
+      "question": "",
+      "subject": "general",
+      "imageUrl": "",
+      "answer": 4,
+      "options": [
+        "", "", "", ""
+      ]
+    }
+  ]
+}

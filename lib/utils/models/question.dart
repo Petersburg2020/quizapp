@@ -5,18 +5,22 @@ import 'dart:core';
 class Question {
   final String question;
   final String imageUrl;
-  final List<String> answers;
+  final int answer;
+  bool isCorrect = false;
+  final List<String> options;
 
   Question(
     this.question,
     this.imageUrl,
-    this.answers,
+    this.answer,
+    this.options,
   );
 
   factory Question.fromMap(Map<String, dynamic> questMap) => Question(
         questMap['question'],
         questMap['imageUrl'],
-        questMap['answers'],
+        questMap['answer'],
+        questMap['options']
       );
 
   factory Question.fromJson(String jsonString) => Question.fromMap(json.decode(jsonString));
@@ -25,9 +29,12 @@ class Question {
     final jsonMap = Map<String, dynamic>();
     jsonMap['question'] = question;
     jsonMap['imageUrl'] = imageUrl;
-    jsonMap['answers'] = answers;
+    jsonMap['answer'] = answer;
+    jsonMap['options'] = options;
     return jsonMap;
   }
+
+  void chooseOption(int option) => isCorrect = option == answer;
 
   String toJson() => json.encode(toMap());
 

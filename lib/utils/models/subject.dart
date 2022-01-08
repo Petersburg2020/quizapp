@@ -1,6 +1,4 @@
 import 'dart:convert';
-
-import 'package:flutter/material.dart';
 import 'package:quizapp/utils/models/models.dart';
 
 class Subject {
@@ -8,8 +6,8 @@ class Subject {
   final String subject;
 
   Subject(
-    this.questions,
     this.subject,
+    this.questions,
   );
 
   Question get(int number) => questions[number - 1];
@@ -19,23 +17,17 @@ class Subject {
     questions.forEach((question) {
       questionList.add(Question.fromJson(question));
     });
-    return Subject(questionList, subject);
-  }
-
-  factory Subject.fromFile(String subject, String jsonFile) {
-    
+    return Subject(subject, questionList);
   }
 
   factory Subject.fromJson(String subject, String jsonString) {
-    List<dynamic> list = json.decode(jsonString);
+    final decoded = json.decode(jsonString);
+
+    List<dynamic> list = decoded['questions'];
     List<Question> questions = [];
     list.forEach((question) {
       questions.add(Question.fromMap(question));
     });
-    return Subject(
-      questions,
-      subject,
-    );
+    return Subject(subject, questions);
   }
-
 }
