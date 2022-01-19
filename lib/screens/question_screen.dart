@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quizapp/screens/screens.dart';
-import 'package:quizapp/utils/utils.dart';
+import 'package:quizapp/utils/models/models.dart';
 import 'package:quizapp/widgets/widgets.dart';
 
 class QuestionScreen extends StatefulWidget {
@@ -104,6 +104,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
+              // Header
               Container(
                 width: width * 0.9,
                 child: Column(
@@ -146,6 +147,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
                   ],
                 ),
               ),
+              // Question
               Container(
                 width: width * 0.9,
                 child: Center(
@@ -180,6 +182,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
                   ),
                 ),
               ),
+              // Options
               Container(
                 width: width * 0.9,
                 child: Column(

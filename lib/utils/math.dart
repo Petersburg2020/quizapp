@@ -6,6 +6,9 @@ class Math {
   static double div(double a, double b) => a / b;
   static double abs(double a) => a.abs();
   static double random() => Random().nextDouble();
+  static int rint() => Random().nextInt(0x7fffffff);
+
+  static int nextInt(int range) => Random().nextInt(range);
 
   static double nthRoot(double num, int nth) {
     var xPre = Math.random() * 10;

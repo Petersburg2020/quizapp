@@ -1,7 +1,5 @@
 export 'file/file_manager.dart';
 export 'file/json_manager.dart';
-//export 'document/document.dart';
-//export 'text/text.dart';
 export 'models/models.dart';
 export 'dart:convert';
 export 'math.dart';
