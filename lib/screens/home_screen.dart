@@ -36,7 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Center(
           child: MultiColoredText(
             text: 'Quiz',
-            width: width / 4,
+            width: width - 20,
             color: Colors.white,
             radius: 8.0,
             fontSize: 24.0,

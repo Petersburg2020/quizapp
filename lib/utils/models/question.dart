@@ -34,6 +34,8 @@ class Question {
     return jsonMap;
   }
 
+  bool hasImage() => imageUrl.isNotEmpty;
+
   void chooseOption(int option) => isCorrect = option == answer;
 
   String toJson() => json.encode(toMap());
